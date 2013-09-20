@@ -11,7 +11,7 @@
 #import "CGGeometry+IDPExtensions.h"
 #import "NSObject+IDPExtensions.h"
 
-#import "RSLPropertyMacros.h"
+#import "IDPPropertyMacros.h"
 
 static const CGFloat IDPLoadingViewFadeDuration   = 0.3f;
 
@@ -127,7 +127,7 @@ static const CGFloat IDPLoadingViewFadeDuration   = 0.3f;
 
 - (void)setActivityIndicator:(UIActivityIndicatorView *)activityIndicator {
     [_activityIndicator removeFromSuperview];
-    RSLNonatomicRetainPropertySynthesize(_activityIndicator, activityIndicator);
+    IDPNonatomicRetainPropertySynthesize(_activityIndicator, activityIndicator);
 }
 
 - (void)setFrame:(CGRect)frame {
