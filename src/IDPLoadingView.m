@@ -137,25 +137,6 @@ static const CGFloat IDPLoadingViewFadeDuration   = 0.3f;
 }
 
 #pragma mark -
-#pragma mark Accessors
-
-#warning causes crash
-/*
-- (void)removeFromSuperview {
-    [UIView animateWithDuration:IDPLoadingViewFadeDuration
-                          delay:0.0
-                        options:UIViewAnimationOptionBeginFromCurrentState
-                     animations:^{
-                         self.alpha = 0.0f;
-                     }
-                     completion:^(BOOL finished){
-                         UIView *strongSuperview = [[self superview] retain];
-                         [super removeFromSuperview];
-                         [strongSuperview release];
-                     }];
-}
-*/
-#pragma mark -
 #pragma mark Private
 
 - (void)configureLable:(NSString *)message {
