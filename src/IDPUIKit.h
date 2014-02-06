@@ -7,3 +7,4 @@
 #import "UIView+IDPExtensions.h"
 #import "UIViewController+IDPExtensions.h"
 #import "UIViewController+IDPInitialization.h"
+#import "IDPView.h"
