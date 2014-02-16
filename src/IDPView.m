@@ -35,6 +35,7 @@
 - (void)hideLoadingView {
     if (self.loadingView) {
         [self.loadingView removeFromSuperview];
+        self.loadingView = nil;
     }
 }
 
