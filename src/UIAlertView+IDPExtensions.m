@@ -28,9 +28,6 @@ static NSString * const kInternetError  = @"Please ensure you have Internet acce
 }
 
 + (void)showAlertWithTitle:(NSString *)title message:(NSString *)message {
-    if ([UIAlertView isAlertViewVisible]) {
-        return;
-    }
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
                                                     message:message
                                                    delegate:nil
