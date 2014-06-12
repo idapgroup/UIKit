@@ -8,14 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-#define IDPViewControllerViewOfClassGetterSynthesize(theClass, getterName) \
-        - (theClass *)getterName { \
-            if ([self.view isKindOfClass:[theClass class]]) { \
-                return (theClass *)self.view; \
-            } \
-            return nil; \
-        }
-
 @interface UIViewController (IDPExtensions)
 
 @property (nonatomic, retain, readonly) UITableView *tableView;
