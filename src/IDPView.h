@@ -12,5 +12,6 @@
 
 - (void)presentLoadingView;
 - (void)hideLoadingView;
+- (void)presentLoadingViewWithMessage:(NSString *)message;
 
 @end

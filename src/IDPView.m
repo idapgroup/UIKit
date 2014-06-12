@@ -39,4 +39,11 @@
     }
 }
 
+- (void)presentLoadingViewWithMessage:(NSString *)message {
+    if (!self.loadingView) {
+        self.loadingView = [IDPLoadingView loadingViewInView:self
+                                                 withMessage:message];
+    }
+}
+
 @end
