@@ -20,6 +20,4 @@
 
 @property (nonatomic, retain, readonly) UITableView *tableView;
 
-+ (id)defaultNibController;
-
 @end

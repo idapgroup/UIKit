@@ -10,10 +10,6 @@
 
 @implementation UIViewController (IDPExtensions)
 
-+ (id)defaultNibController {
-    return [[[self alloc] initWithNibName:NSStringFromClass([self class]) bundle:nil] autorelease];
-}
-
 - (UITableView *)tableView {
     if ([self.view respondsToSelector:@selector(tableView)]) {
         return [self.view performSelector:@selector(tableView)];
